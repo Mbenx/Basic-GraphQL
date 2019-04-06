@@ -1,0 +1,16 @@
+{
+  "name": "trial_graphql",
+  "version": "1.0.0",
+  "description": "for trial graphql",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "author": "Mbenx",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4",
+    "express-graphql": "^0.7.1",
+    "graphql": "^14.2.1"
+  }
+}
