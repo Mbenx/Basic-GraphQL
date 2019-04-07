@@ -1,8 +1,73 @@
 Latian dasar GraphQL menggunakan Node JS
-Part 1 (Setup Dan Menampilkan Data)
-- Mendefinisikan Schema
-- Mendefinisikan Sumber data
-- Mendefinisikan Resolvers
+Part 2 (Relasi GraphQL)
+- Merelasikan data dari 2 array
+
+- Memanggil data jamak tanpa relasi
+{
+  forums {
+    id,
+    title,
+    desc
+  }
+}
+
+- memanggil data single tanpa relasi
+
+{
+  forum(id:"2") {
+    id,
+    title
+  }
+}
+
+- memanggil data single dengan relasi
+
+{
+  forum(id:"2") {
+    title,
+    user{
+      id
+      name
+    }
+  }
+}
+
+- Memanggil data jamak dengan relasi
+
+{
+  user(id:"1") {
+    name,
+    forums{
+      id
+      title
+    }
+  }
+}
+
+
+{
+  forums{
+    id
+    title
+    desc
+    user{
+      id
+      name
+    }
+  }
+}
+
+{
+  users{
+    id
+    name
+    forums{
+      id
+      title
+      desc
+    }
+  }
+}
 
 
 Cara menggunakan
